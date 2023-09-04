@@ -24,3 +24,26 @@ git init
 Initialized empty Git repository in /home/user/Desktop/git_exercise/.git/
 ```
 Это значит, что наш репозиторий был успешно создан, но пока что пуст.
+Теперь создайте текстовый файл под названием hello.txt и сохраните его в директории git_exercise.
+## 5. Определение состояния
+```
+git status
+```
+
+status — это еще одна важнейшая команда, которая показывает информацию о текущем состоянии репозитория: актуальна ли информация на нём, нет ли чего-то нового, что поменялось, и так далее. Запуск git status на нашем свежесозданном репозитории должен выдать:
+
+```
+PS D:\...\git reposirory> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS D:\...\git reposirory>
+```
+Сообщение говорит о том, что файл hello.txt неотслеживаемый. Это значит, что файл новый и система еще не знает, нужно ли следить за изменениями в файле или его можно просто игнорировать. Для того, чтобы начать отслеживать новый файл, нужно его специальным образом объявить.
+
